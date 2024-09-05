@@ -21,6 +21,9 @@ module.exports = {
           321: "#7a7a7a"
         },
       },
+      fontFamily: {
+        musashi: ["Musashi", "sans-seriff"],
+      },
     },
   },
   plugins: [],
