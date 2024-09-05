@@ -20,9 +20,16 @@ module.exports = {
           123: "#b8b8b8",
           321: "#7a7a7a"
         },
+        white: {
+          100: "rgba(255, 255, 255, 1)",
+          30: "rgba(255, 255, 255, 0.3)",
+          20: "rgba(255, 255, 255, 0.20)",
+          15: "rgba(255, 255, 255, 0.15)",
+        }
       },
       fontFamily: {
         musashi: ["Musashi", "sans-seriff"],
+        neothic: ["Neothic", "sans-seriff"],
       },
     },
   },
