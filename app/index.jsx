@@ -1,18 +1,19 @@
 import { useRouter } from "expo-router";
-import { Text, View } from "react-native";
+import { Image, ImageBackground, Text, View } from "react-native";
+import images from "../constants/images";
+import { SafeAreaView } from "react-native-safe-area-context";
 
 export default function Index() {
   const router = useRouter();
   return (
-    <View
-      style={{
-        flex: 1,
-        justifyContent: "center",
-        alignItems: "center",
-      }}
-    >
-      <Text className="text-base">Edit app/index.tsx to edit this screen.</Text>
-      <Text className="text-lg font-bold" onPress={() => router.push("home")}>home</Text>
-    </View>
+      <View className="flex-1 justify-center items-center bg-primary">
+        <ImageBackground source={images.japanesebg} className="w-full h-full" resizeMode="contain">
+          <SafeAreaView>
+            <View className="mx-8">
+              <Text className="text-lg font-bold text-white">SUSHIMAN</Text>
+            </View>
+          </SafeAreaView>
+        </ImageBackground>
+      </View>
   );
 }
