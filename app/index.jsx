@@ -11,8 +11,8 @@ export default function Index() {
         alignItems: "center",
       }}
     >
-      <Text>Edit app/index.tsx to edit this screen.</Text>
-      <Text onPress={() => router.push("home")}>Move</Text>
+      <Text className="text-base">Edit app/index.tsx to edit this screen.</Text>
+      <Text className="text-lg font-bold" onPress={() => router.push("home")}>home</Text>
     </View>
   );
 }
