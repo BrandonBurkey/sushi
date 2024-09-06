@@ -37,7 +37,7 @@ export default function Index() {
           {/* Bottom SUSHIMAN */}
           <View className="flex-1 justify-end ml-8 mr-8">
             <Text className="font-neothic text-4xl text-white-100">THE TASTE OF JAPANESE FOOD</Text>
-            <Text className="text-base text-white-100 mt-6">Feel the taste of most populars Japanese foods from anywhere and anytime.</Text>
+            <Text className="text-base text-white-100 mt-6">Feel the taste of most populars Japanese foods from anywhere and anytime</Text>
             <View className="mt-6">
               <PrettyButton title="Get Started"/>
             </View>
