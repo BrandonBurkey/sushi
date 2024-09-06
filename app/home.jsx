@@ -1,23 +1,31 @@
-import { View, Text, TouchableOpacity, ImageBackground } from 'react-native'
+import { View, Text, TouchableOpacity, ImageBackground, Image } from 'react-native'
 import React from 'react'
 import { SafeAreaView } from 'react-native-safe-area-context'
 import icons from "../constants/icons"
 
-const home = () => {
+const Home = () => {
   return (
     <SafeAreaView className="flex-1">
-        <View className="items-center justify-center mx-8">
-            <View className="w-full h-12 flex-row">
-              <View className="flex-1">
+        <View className="mx-8">
+            <View className="w-full h-12 flex-row items-center">
+              <View className="w-[25%]">
                   <TouchableOpacity className="w-full h-full">
                     <ImageBackground className="w-[55%] h-full" resizeMode="contain" source={icons.hamburger}>
-                    <View className="w-full h-full"/>
-                  </ImageBackground>
+                      <View className="w-full h-full"/>
+                    </ImageBackground>
                   </TouchableOpacity>
               </View>
-              <View className="flex-1 bg-green-500">
+
+              <View className="w-[50%] flex-row items-center justify-center">
+                <Image source={icons.pin} className="w-5 h-5 mr-2"/>
+                <Text>Tokyo</Text>
               </View>
-              <View className="flex-1 bg-blue-500">
+
+              <View className="w-[60%] items-end">
+                  <TouchableOpacity className="w-full h-full">
+                    <ImageBackground className="w-[80%] h-full" resizeMode="contain" source={icons.moji}>
+                    </ImageBackground>
+                  </TouchableOpacity>
               </View>
             </View>
         </View>
@@ -25,4 +33,4 @@ const home = () => {
   )
 }
 
-export default home
+export default Home

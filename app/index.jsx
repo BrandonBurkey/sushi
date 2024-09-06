@@ -44,7 +44,7 @@ export default function Index() {
           </View>
           <View className="flex-1 justify-end ml-8 mr-8">
             <Text className="font-neothic text-4xl text-white-100">THE TASTE OF JAPANESE FOOD</Text>
-            <Text className="text-base text-white-100 mt-6">Feel the taste of most populars Japanese foods from anywhere and anytime</Text>
+            <Text className="text-base font-plight text-white-100 mt-6">Feel the taste of most populars Japanese foods from anywhere and anytime</Text>
             <View className="mt-6">
               <PrettyButton onPress={() => router.push('/home')} title="Get Started"/>
             </View>
