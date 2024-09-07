@@ -46,7 +46,7 @@ export default function Index() {
             <Text className="font-neothic text-4xl text-white-100">THE TASTE OF JAPANESE FOOD</Text>
             <Text className="text-base font-plight text-white-100 mt-6">Feel the taste of most populars Japanese foods from anywhere and anytime</Text>
             <View className="mt-6">
-              <PrettyButton onPress={() => router.push('/home')} title="Get Started"/>
+              <PrettyButton arrowShown={true} onPress={() => router.push('/home')} title="Get Started"/>
             </View>
           </View>
         </SafeAreaView>
